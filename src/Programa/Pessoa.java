@@ -5,8 +5,14 @@ public class Pessoa {
     private static int counter = 1;
 
     private String nome;
-    private String CPF;
+    private String cpf;
     private String email;
+
+    public Pessoa(String nome, String cPF, String email) {
+        this.nome = nome;
+        cpf = cPF;
+        this.email = email;
+    }
 
     public String getNome() {
         return nome;
@@ -15,10 +21,10 @@ public class Pessoa {
         this.nome = nome;
     }
     public String getCPF() {
-        return CPF;
+        return cpf;
     }
     public void setCPF(String cPF) {
-        CPF = cPF;
+        cpf = cPF;
     }
     public String getEmail() {
         return email;
