@@ -7,11 +7,11 @@ public class Pessoa {
     private String nome;
     private String cpf;
     private String email;
-
     public Pessoa(String nome, String cPF, String email) {
         this.nome = nome;
         cpf = cPF;
         this.email = email;
+        counter += 1;
     }
 
     public String getNome() {
