@@ -7,4 +7,10 @@ public class Conta {
     private int numeroConta;
     private Pessoa pessoa;
     private Double saldo = 0.0;
+
+    public Conta(Pessoa pessoa) {
+        this.numeroConta = contadorDeContas;
+        this.pessoa = pessoa;
+        contadorDeContas += 1;
+    }
 }
