@@ -27,5 +27,6 @@ public class AgenciaBancaria {
         System.out.println("|   5 - Listar contas   |");
         System.out.println("|   6 - Sair            |");
 
+        int operacao = input.nextInt();
     }
 }
