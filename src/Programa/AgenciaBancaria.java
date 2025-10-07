@@ -68,5 +68,7 @@ public class AgenciaBancaria {
         String email = input.next();
 
         Pessoa pessoa = new Pessoa(nome, cpf, email);
+
+        Conta conta = new Conta(pessoa);
     }
 }
