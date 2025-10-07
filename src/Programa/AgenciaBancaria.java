@@ -55,4 +55,16 @@ public class AgenciaBancaria {
                 break;
         }
     }
+
+    public static void criarConta() {
+
+        System.out.println("\nNome: ");
+        String nome = input.next();
+
+        System.out.println("\nCPF: ");
+        String cpf = input.next();
+
+        System.out.println("\nEmail: ");
+        String email = input.next();
+    }
 }
