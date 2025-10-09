@@ -88,5 +88,8 @@ public class AgenciaBancaria {
         return conta;
     }
 
-    public static void depositar() {}
+    public static void depositar() {
+        System.out.println("Número da conta: ");
+        int numeroConta = input.nextInt();
+    }
 }
