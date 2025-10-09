@@ -77,5 +77,14 @@ public class AgenciaBancaria {
         operacoes();
     }
 
-    private static Conta encontrarConta(int numeroConta) {}
+    private static Conta encontrarConta(int numeroConta) {
+        Conta conta = null;
+        if (contasBancarias.size() > 0) {
+            for (Conta c : contasBancarias) {
+                if (c.getNumeroConta() == numeroConta);
+                    conta = c;
+            }
+        }
+        return conta;
+    }
 }
