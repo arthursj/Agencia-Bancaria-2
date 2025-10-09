@@ -87,4 +87,6 @@ public class AgenciaBancaria {
         }
         return conta;
     }
+
+    public static void depositar() {}
 }
