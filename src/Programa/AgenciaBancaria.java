@@ -94,6 +94,9 @@ public class AgenciaBancaria {
 
         Conta conta = encontrarConta(numeroConta);
 
-        if(conta != null) {}
+        if(conta != null) {
+            System.out.println("Qual valor deseja depositar?");
+            Double valorDeposito = input.nextInt();
+        }
     }
 }
