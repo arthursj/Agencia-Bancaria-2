@@ -91,5 +91,7 @@ public class AgenciaBancaria {
     public static void depositar() {
         System.out.println("Número da conta: ");
         int numeroConta = input.nextInt();
+
+        Conta conta = encontrarConta(numeroConta);
     }
 }
