@@ -70,5 +70,7 @@ public class AgenciaBancaria {
         Pessoa pessoa = new Pessoa(nome, cpf, email);
 
         Conta conta = new Conta(pessoa);
+
+        contasBancarias.add(conta);
     }
 }
