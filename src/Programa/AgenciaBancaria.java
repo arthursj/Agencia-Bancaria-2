@@ -73,5 +73,7 @@ public class AgenciaBancaria {
 
         contasBancarias.add(conta);
         System.out.println("Sua conta foi criada com sucesso!");
+
+        operacoes();
     }
 }
