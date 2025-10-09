@@ -76,4 +76,6 @@ public class AgenciaBancaria {
 
         operacoes();
     }
+
+    private static Conta encontrarConta(int numeroConta) {}
 }
