@@ -93,5 +93,7 @@ public class AgenciaBancaria {
         int numeroConta = input.nextInt();
 
         Conta conta = encontrarConta(numeroConta);
+
+        if(conta != null) {}
     }
 }
