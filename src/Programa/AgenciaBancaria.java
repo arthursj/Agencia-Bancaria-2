@@ -125,5 +125,7 @@ public class AgenciaBancaria {
     public static void transferir() {
         System.out.println(" Número da conta do remetente: ");
         int numeroContaRemetente = input.nextInt();
+
+        Conta contaRemetente = encontrarConta(numeroContaRemetente);
     }
 }
