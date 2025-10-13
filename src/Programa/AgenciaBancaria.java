@@ -121,4 +121,8 @@ public class AgenciaBancaria {
         }
         operacoes();
     }
+
+    public static void transferir() {
+        System.out.println(" Número da conta do remetente: ");
+    }
 }
