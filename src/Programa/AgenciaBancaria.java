@@ -140,6 +140,8 @@ public class AgenciaBancaria {
                 Double valor = input.nextDouble();
 
                 contaRemetente.transferir(contaDestinatario, valor);
+            } else {
+                System.out.println(" Conta para transferência não encontrada! ");
             }
         }
         operacoes();
