@@ -127,5 +127,11 @@ public class AgenciaBancaria {
         int numeroContaRemetente = input.nextInt();
 
         Conta contaRemetente = encontrarConta(numeroContaRemetente);
+
+        if (contaRemetente != null) {
+            System.out.println(" Número da conta do destinatário: ");
+            int numeroContaDestinatario = input.nextInt();
+
+        }
     }
 }
