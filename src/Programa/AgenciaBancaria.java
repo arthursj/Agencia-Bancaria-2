@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AgenciaBancaria {
-    
+
     static Scanner input = new Scanner(System.in);
     static ArrayList<Conta> contasBancarias;
 
@@ -28,14 +28,14 @@ public class AgenciaBancaria {
         System.out.println("|   6 - Sair            |");
 
         int operacao = input.nextInt();
-        
-        switch(operacao) {
+
+        switch (operacao) {
             case 1:
                 criarConta();
                 break;
             case 2:
                 depositar();
-                break;                
+                break;
             case 3:
                 sacar();
                 break;
@@ -43,7 +43,7 @@ public class AgenciaBancaria {
                 transferir();
                 break;
             case 5:
-                listar();
+                listarContas();
                 break;
             case 6:
                 System.out.println("Obrigado por utilizar nossa agência!");
@@ -81,8 +81,9 @@ public class AgenciaBancaria {
         Conta conta = null;
         if (contasBancarias.size() > 0) {
             for (Conta c : contasBancarias) {
-                if (c.getNumeroConta() == numeroConta);
-                    conta = c;
+                if (c.getNumeroConta() == numeroConta)
+                    ;
+                conta = c;
             }
         }
         return conta;
@@ -94,7 +95,7 @@ public class AgenciaBancaria {
 
         Conta conta = encontrarConta(numeroConta);
 
-        if(conta != null) {
+        if (conta != null) {
             System.out.println(" Qual valor deseja depositar? ");
             Double valorDeposito = input.nextDouble();
             conta.depositar(valorDeposito);
@@ -141,5 +142,17 @@ public class AgenciaBancaria {
                 contaRemetente.transferir(contaDestinatario, valor);
             }
         }
+        operacoes();
+    }
+
+    public static void listarContas() {
+        if (contasBancarias.size() > 0) {
+            for (Conta conta : contasBancarias) {
+                System.out.println(conta);
+            }
+        } else {
+            System.out.println(" Não há contas cadastradas ! ");
+        }
+        operacoes();
     }
 }
