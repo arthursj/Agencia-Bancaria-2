@@ -132,6 +132,14 @@ public class AgenciaBancaria {
             System.out.println(" Número da conta do destinatário: ");
             int numeroContaDestinatario = input.nextInt();
 
+            Conta contaDestinatario = encontrarConta(numeroContaDestinatario);
+
+            if (contaDestinatario != null) {
+                System.out.println(" Valor da transferência: ");
+                Double valor = input.nextDouble();
+
+                contaRemetente.transferir(contaDestinatario, valor);
+            }
         }
     }
 }
