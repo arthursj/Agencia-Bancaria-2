@@ -116,7 +116,7 @@ public class AgenciaBancaria {
             System.out.println(" Qual valor deseja sacar? ");
             Double valorSaque = input.nextDouble();
             conta.sacar(valorSaque);
-            System.out.println(" Valor sacado com sucesso! ");
+            // System.out.println(" Valor sacado com sucesso! ");
         } else {
             System.out.println(" Conta não encontrada! ");
         }
