@@ -143,6 +143,8 @@ public class AgenciaBancaria {
             } else {
                 System.out.println(" Conta para transferência não encontrada! ");
             }
+        } else {
+            System.out.println(" Conta para transferência não encontrada! ");
         }
         operacoes();
     }
