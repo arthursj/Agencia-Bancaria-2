@@ -81,9 +81,9 @@ public class AgenciaBancaria {
         Conta conta = null;
         if (contasBancarias.size() > 0) {
             for (Conta c : contasBancarias) {
-                if (c.getNumeroConta() == numeroConta)
-                    ;
-                conta = c;
+                if (c.getNumeroConta() == numeroConta) {
+                    conta = c;
+                }
             }
         }
         return conta;
