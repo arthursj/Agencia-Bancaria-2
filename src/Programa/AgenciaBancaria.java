@@ -124,13 +124,13 @@ public class AgenciaBancaria {
     }
 
     public static void transferir() {
-        System.out.println(" Número da conta do remetente: ");
+        System.out.println("Número da conta do remetente: ");
         int numeroContaRemetente = input.nextInt();
 
         Conta contaRemetente = encontrarConta(numeroContaRemetente);
 
         if (contaRemetente != null) {
-            System.out.println(" Número da conta do destinatário: ");
+            System.out.println("Número da conta do destinatário: ");
             int numeroContaDestinatario = input.nextInt();
 
             Conta contaDestinatario = encontrarConta(numeroContaDestinatario);

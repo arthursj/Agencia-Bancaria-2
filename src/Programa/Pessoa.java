@@ -4,16 +4,21 @@ public class Pessoa {
 
     private static int counter = 1;
 
+    private int numeroPessoa;
     private String nome;
     private String cpf;
     private String email;
     public Pessoa(String nome, String cPF, String email) {
+        this.numeroPessoa = Pessoa.counter;
         this.nome = nome;
         cpf = cPF;
         this.email = email;
-        counter += 1;
+        Pessoa.counter += 1;
     }
 
+    public int getNumeroPessoa() {
+        return this.numeroPessoa;
+    }
     public String getNome() {
         return nome;
     }
