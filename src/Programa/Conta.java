@@ -63,7 +63,7 @@ public class Conta {
             setSaldo(getSaldo() - valor);
             System.out.println("Saque realizado com sucesso!");
         } else {
-            System.out.println("Não foi possível realizar o saque!");
+            System.out.println("Saque não realizado. Saldo insuficiente.");
         }
     }
 

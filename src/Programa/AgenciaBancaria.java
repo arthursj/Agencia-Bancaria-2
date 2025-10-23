@@ -15,11 +15,11 @@ public class AgenciaBancaria {
 
     public static void operacoes() {
 
-        System.out.println("--------------------------------------------------");
-        System.out.println("--------------- Bem-vindo a nossa Agência ----------------");
-        System.out.println("--------------------------------------------------");
+        System.out.println("------------------------------------------------------");
+        System.out.println("------------- Bem-vindo a nossa Agência --------------");
+        System.out.println("------------------------------------------------------");
         System.out.println("***** Selecione uma operação que deseja realizar *****");
-        System.out.println("--------------------------------------------------");
+        System.out.println("------------------------------------------------------");
         System.out.println("|   1 - Criar conta     |");
         System.out.println("|   2 - Depositar       |");
         System.out.println("|   3 - Sacar           |");
@@ -46,11 +46,11 @@ public class AgenciaBancaria {
                 listarContas();
                 break;
             case 6:
-                System.out.println("Obrigado por utilizar nossa agência!");
+                System.out.println("Obrigado por utilizar nossa agência! ");
                 System.exit(0);
 
             default:
-                System.out.println("Operação inválida!");
+                System.out.println("Operação inválida! ");
                 operacoes();
                 break;
         }
@@ -96,12 +96,12 @@ public class AgenciaBancaria {
         Conta conta = encontrarConta(numeroConta);
 
         if (conta != null) {
-            System.out.println(" Qual valor deseja depositar? ");
+            System.out.println("Qual valor deseja depositar? ");
             Double valorDeposito = input.nextDouble();
             conta.depositar(valorDeposito);
             // System.out.println(" Valor depositado com sucesso! ");
         } else {
-            System.out.println(" Conta não encontrada! ");
+            System.out.println("Conta não encontrada! ");
         }
         operacoes();
     }
@@ -113,12 +113,12 @@ public class AgenciaBancaria {
         Conta conta = encontrarConta(numeroConta);
 
         if (conta != null) {
-            System.out.println(" Qual valor deseja sacar? ");
+            System.out.println("Qual valor deseja sacar? ");
             Double valorSaque = input.nextDouble();
             conta.sacar(valorSaque);
             // System.out.println(" Valor sacado com sucesso! ");
         } else {
-            System.out.println(" Conta não encontrada! ");
+            System.out.println("Conta não encontrada! ");
         }
         operacoes();
     }
@@ -141,10 +141,10 @@ public class AgenciaBancaria {
 
                 contaRemetente.transferir(contaDestinatario, valor);
             } else {
-                System.out.println(" Conta para transferência não encontrada! ");
+                System.out.println("Conta para transferência não encontrada! ");
             }
         } else {
-            System.out.println(" Conta para transferência não encontrada! ");
+            System.out.println("Conta para transferência não encontrada! ");
         }
         operacoes();
     }
@@ -155,7 +155,7 @@ public class AgenciaBancaria {
                 System.out.println(conta);
             }
         } else {
-            System.out.println(" Não há contas cadastradas ! ");
+            System.out.println("Não há contas cadastradas ! ");
         }
         operacoes();
     }
