@@ -78,6 +78,7 @@ With this system, we can register multiple bank accounts, deposit the amount of 
 
 **Folder Structure:**
 
+```
 Agencia-Bancaria-AJS/
 ├── bin/
 │   └── Programa/
